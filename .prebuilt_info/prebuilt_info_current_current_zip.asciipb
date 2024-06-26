@@ -1,6 +1,18 @@
 drops {
   android_build_drop {
+<<<<<<< HEAD
+<<<<<<< HEAD
     build_id: "T1009772"
+||||||| merged common ancestors
+    build_id: "T1010120"
+=======
+    build_id: "T1010137"
+>>>>>>> 6ea13c141fbb8203211ceef8a6f6dbff7ff4811c
+||||||| 6ea13c1
+    build_id: "T1010137"
+=======
+    build_id: "T1010146"
+>>>>>>> 2f445f6910454b9ee04702f8efcd70c189a587fd
     target: "train_build"
     source_file: "mainline-sdks/for-latest-build/current/com.google.android.ondevicepersonalization/sdk/ondevicepersonalization-module-sdk-current.zip"
   }
