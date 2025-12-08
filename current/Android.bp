@@ -38,11 +38,6 @@ prebuilt_bootclasspath_fragment {
 
 java_sdk_library_import {
     name: "framework-ondevicepersonalization",
-    // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "ondevicepersonalization_module" is true.
-    use_source_config_var: {
-        config_namespace: "ondevicepersonalization_module",
-        var_name: "source_build",
-    },
     visibility: ["//visibility:public"],
     apex_available: ["com.android.ondevicepersonalization"],
     licenses: ["ondevicepersonalization-module-sdk_Android-Apache-2.0"],
@@ -83,11 +78,6 @@ java_sdk_library_import {
 
 java_sdk_library_import {
     name: "service-ondevicepersonalization",
-    // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "ondevicepersonalization_module" is true.
-    use_source_config_var: {
-        config_namespace: "ondevicepersonalization_module",
-        var_name: "source_build",
-    },
     visibility: ["//visibility:public"],
     apex_available: ["com.android.ondevicepersonalization"],
     licenses: ["ondevicepersonalization-module-sdk_Android-Apache-2.0"],
@@ -116,6 +106,12 @@ license {
     visibility: ["//visibility:private"],
     license_kinds: ["SPDX-license-identifier-Apache-2.0"],
     license_text: ["licenses/build/soong/licenses/LICENSE"],
+}
+
+license {
+    name: "ondevicepersonalization-module-sdk_opensourcerequest",
+    visibility: ["//visibility:private"],
+    license_text: ["licenses/build/soong/licenses/opensourcerequest"],
 }
 
 prebuilt_systemserverclasspath_fragment {
